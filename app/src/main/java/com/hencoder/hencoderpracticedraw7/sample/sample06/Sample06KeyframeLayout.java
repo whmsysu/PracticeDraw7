@@ -39,7 +39,7 @@ public class Sample06KeyframeLayout extends RelativeLayout {
             @Override
             public void onClick(View v) {
                 Keyframe keyframe1 = Keyframe.ofFloat(0, 0); // 开始：progress 为 0
-                Keyframe keyframe2 = Keyframe.ofFloat(0.5f, 100); // 进行到一半是，progres 为 100
+                Keyframe keyframe2 = Keyframe.ofFloat(0.5f, 100); // 进行到一半是，progress 为 100
                 Keyframe keyframe3 = Keyframe.ofFloat(1, 80); // 结束时倒回到 80
                 PropertyValuesHolder holder = PropertyValuesHolder.ofKeyframe("progress", keyframe1, keyframe2, keyframe3);
 
